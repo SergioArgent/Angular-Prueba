@@ -1,0 +1,12 @@
+<!-- Contenedor principal para los GIFs en un grid de Bootstrap -->
+<div class="row">
+    <div *ngFor="let gif of gifs" class="col-lg-3 col-md-4 col-sm-6"> <!-- 4 columnas en desktop, 3 en tablet y 1 en mobile -->
+      <div class="card mb-3">
+        <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">{{ gif.title | titlecase }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

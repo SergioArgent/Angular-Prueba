@@ -1,0 +1,19 @@
+<!-- Contenedor principal del sidebar con estilos aplicados -->
+<div class="bg-dark border-right p-3" id="sidebar">
+  <!-- Título de la aplicación dentro del sidebar -->
+  <h3 class="text-light">
+    App de Gifs
+  </h3>
+
+  <!-- Lista de elementos del historial de búsqueda -->
+  <div class="list-group list-reset">
+    <!-- Directiva *ngFor para iterar sobre cada elemento del historial -->
+    <a *ngFor="let termino of historial"  
+       (click)="realizarBusqueda(termino)" 
+       class="list-group-item list-group-item-action"
+       [ngClass]="{ 'active': categoriaSeleccionada === termino }">
+         <!-- Mostrar cada término en formato Title Case -->
+         {{ termino | titlecase }}
+    </a>
+  </div>
+</div>

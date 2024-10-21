@@ -1,1 +1,97 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos básicos para toda la aplicación */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Fuente más moderna */
+    background-color: #f8f9fa; /* Color de fondo claro */
+}
+
+/* Estilo para el sidebar */
+#sidebar {
+    height: 100%;
+    min-height: 100vh;
+    min-width: 220px; /* Aumento del ancho para una mejor estética */
+    background-color: #343a40; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+#sidebar h3 {
+    font-size: 1.5rem; /* Tamaño de fuente para el título */
+    margin-bottom: 1.5rem; /* Espaciado inferior */
+}
+
+#sidebar .list-group-item {
+    color: #ffffff; /* Color del texto de los elementos */
+    background-color: transparent; /* Fondo transparente */
+    transition: background-color 0.3s; /* Transición al pasar el ratón */
+}
+
+#sidebar .list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efecto hover */
+}
+
+/* Estilos para las tarjetas de GIFs */
+.card {
+    margin-bottom: 1.5rem; /* Espacio entre tarjetas */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.card-img-top {
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantener la proporción de aspecto de la imagen */
+    object-fit: cover; /* Asegurarse de que la imagen cubra todo el contenedor */
+    height: 100%; /* Hacer que la imagen ocupe toda la altura del contenedor */
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Estilo para el input de búsqueda */
+.input-group {
+    margin-bottom: 2rem; /* Espacio inferior */
+}
+
+.input-group .form-control {
+    border-radius: 5px 0 0 5px; /* Bordes redondeados solo en la izquierda */
+    border: 1px solid #ced4da; /* Borde */
+}
+
+.input-group .btn {
+    border-radius: 0 5px 5px 0; /* Bordes redondeados solo en la derecha */
+}
+
+/* Estilo para el título del buscador */
+h5 {
+    font-weight: bold; /* Negrita */
+    margin-bottom: 1rem; /* Espacio inferior */
+}
+
+/* Responsividad */
+@media (max-width: 576px) {
+    #sidebar {
+        min-width: 100%; /* Ancho completo en móvil */
+    }
+
+    .card {
+        margin-bottom: 1rem; /* Espaciado ajustado en móvil */
+    }
+}
+.list-group-item.active {
+    background-color: #007bff; /* Color de fondo del botón seleccionado */
+    color: #ffffff; /* Color del texto del botón seleccionado */
+}
+
+.img-container {
+    width: 100%; /* Hacer que el contenedor de la imagen ocupe el 100% del ancho de la tarjeta */
+    height: 200px; /* Fijar una altura para que todas las imágenes tengan el mismo tamaño */
+    overflow: hidden; /* Ocultar cualquier contenido que se desborde */
+}
+
+.card-body {
+    text-align: center; /* Centrar el texto */
+}

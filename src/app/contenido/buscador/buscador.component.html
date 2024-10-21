@@ -1,0 +1,13 @@
+<!-- Título de la sección de búsqueda -->
+<h5>Buscar GIFs:</h5>
+
+<!-- Campo de texto para que el usuario escriba su búsqueda -->
+<div class="input-group">
+    <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Escribe aquí para buscar gifs..." 
+        (keyup.enter)="realizarBusqueda()" 
+        #inputBusqueda> <!-- Template reference variable para manipular el campo de texto -->
+    <button class="btn btn-primary" (click)="realizarBusqueda()">Buscar</button> <!-- Botón para realizar la búsqueda -->
+</div>
