@@ -1,5 +1,10 @@
 # Angular-Prueba
 
-Buenas tardes con todos, este es la prueba enviada para el puesto de Practicante TI.
-Siendo mas especificos la prueba esta en el Branch Master.
+## Nombre: BALBIN CASAHUILCA SERGIO NICOLAS
+
+Buenas tardes a todos,
+
+Este es la prueba enviada para el puesto de Practicante TI. Siendo más específicos, la prueba está en el branch **master**.
+
 Agradezco mucho su consideración.
+
